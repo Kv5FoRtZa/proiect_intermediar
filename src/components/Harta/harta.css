@@ -1,0 +1,14 @@
+.ivan
+{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.leaflet-container
+ {
+    width: 100%;
+    height: 96vh;
+    z-index: 1;
+}
