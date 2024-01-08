@@ -5,18 +5,8 @@ import { Link } from 'react-router-dom';
 const Meniu = () => {
     return (
         <div className = "meniu">
-            <button>
-                <Link to="/">
-                    Acasa
-                </Link>
-            </button>
-            <button>
-                <Link to="/Harta">
-                        Harta
-                </Link>
-            </button>
             <div class="dropdown">
-                <button>Statistici</button>
+                <div class="buttonc">Statistici</div>
                     <div class="dropdown-content"> 
                         <div class = "dropright">
                             <div class="button2">Autobuze
@@ -35,7 +25,7 @@ const Meniu = () => {
                             </div>
                         </div>
                         <div class = "dropright">
-                            <div class="button2">Tramvai
+                            <div class="button2">Tramvaie
                                 <div class="dropright-content">
                                     <div class="button2">
                                         <Link to="/G3">
@@ -45,22 +35,6 @@ const Meniu = () => {
                                     <div class="button2">
                                         <Link to="/G4">
                                             Grafic4
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class = "dropright">
-                            <div class="button2">Metroaie
-                                <div class="dropright-content">
-                                    <div class="button2">
-                                        <Link to="/G5">
-                                            Grafic5
-                                        </Link>
-                                    </div>
-                                    <div class="button2">
-                                        <Link to="/G6">
-                                            Grafic6
                                         </Link>
                                     </div>
                                 </div>
@@ -100,7 +74,21 @@ const Meniu = () => {
                         </div>
                     </div>
             </div>
-            
+            <div class="buttonc">
+                <Link to="/Harta">
+                        Harta
+                </Link>
+            </div>
+            <div class="buttonc">
+                <Link to="/Calendar">
+                    Calendar
+                </Link>
+            </div>
+            <div class="buttonc">
+                <Link to="/">
+                    Acasa
+                </Link>
+            </div>
         </div>
     )
 }
