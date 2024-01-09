@@ -50,27 +50,11 @@ export const datepie = [
     "name": "Group C",
     "value": numar(),
   },
-  {
-    "name": "Group D",
-    "value": numar(),
-  },
-  {
-    "name": "Group E",
-    "value": numar(),
-  },
-  {
-    "name": "Group F",
-    "value": numar(),
-  }
 ];
 const createData = (name, ora, timp, ceva, ivan) => {
   return { name, ora, timp, ceva, ivan };
 }
 
 export const rows = [
-  createData('Noaptea', numar(), numar(), numar(), numar()),
-  createData('Ora de varf dimineata', numar(), numar(), numar(), numar()),
-  createData('Dupa pranz', numar(), numar(), numar(), numar()),
-  createData('Ora de varf seara', numar(), numar(), numar(), numar()),
-  createData('Cand trec eu', numar(), numar(), numar(), numar()),
+
 ];
