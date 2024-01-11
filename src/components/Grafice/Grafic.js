@@ -9,16 +9,17 @@ import {
   Legend,
   Pie,
   PieChart,
+  Cell,
 } from 'recharts';
+import "./lolol.css"
+import { datepie } from '../../mockData/mockData';
 
-const Grafic = (data,data1) => {
+const Grafic = (data) => {
 
   return (
     <div className="App">
       <h1>Grafic 1</h1>
-      <PieChart width={730} height={250}>
-          <Pie data={data1} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
-        </PieChart>
+      
       <ComposedChart
           
           width={1500}
@@ -39,9 +40,16 @@ const Grafic = (data,data1) => {
           <Bar dataKey="autobuze" barSize={20} fill="#413ea0" />
           <Line type="monotone" dataKey="Dintre_care_au_intarziat" stroke="#000000" />
         </ComposedChart>
+        <h1>NU mai urasc acest PieChart</h1>
+        <div className='pie_chart'>
+            <PieChart width={930} height={450}>
+              <Pie data={datepie} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={0} fill="#9B00FF" outerRadius={200}  label={(entry) => entry.name}> 
+              lol</Pie>
+            </PieChart>
+        </div>
         
     </div>
   );
-}
+} 
 
 export default Grafic;

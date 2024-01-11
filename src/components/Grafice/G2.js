@@ -7,59 +7,23 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
+  Pie,
+  PieChart,
 } from 'recharts';
+import "./lolol.css"
+import { datepie } from '../../mockData/mockData';
 
-function G2() {
-  
-  let minim = 10;
-  let maxim = 1000;
-
-  const autobuz = () => {
-    return Math.floor(Math.random() * (maxim - minim + 1)) + minim
-  }
-
-  const data = [
-    {
-      name: 'Ora 6',
-      autobuze: autobuz(),
-      Dintre_care_au_intarziat : Math.floor(Math.random() * (maxim - minim + 1)) + minim,
-    },
-    {
-      name: 'Ora 8',
-      autobuze: Math.floor(Math.random() * (maxim - minim + 1)) + minim,
-      Dintre_care_au_intarziat : Math.floor(Math.random() * (maxim - minim + 1)) + minim,
-    },
-    {
-      name: 'Ora 12',
-      autobuze: Math.floor(Math.random() * (maxim - minim + 1)) + minim,
-      Dintre_care_au_intarziat : Math.floor(Math.random() * (maxim - minim + 1)) + minim,
-    },
-    {
-      name: 'Ora 69',
-      autobuze: Math.floor(Math.random() * (maxim - minim + 1)) + minim,
-      Dintre_care_au_intarziat : Math.floor(Math.random() * (maxim - minim + 1)) + minim,
-    },
-    {
-      name: 'Ora de chimie',
-      autobuze: Math.floor(Math.random() * (maxim - minim + 1)) + minim,
-      Dintre_care_au_intarziat : Math.floor(Math.random() * (maxim - minim + 1)) + minim,
-    },
-    {
-      name: 'Ora 543',
-      autobuze: Math.floor(Math.random() * (maxim - minim + 1)) + minim,
-      Dintre_care_au_intarziat : Math.floor(Math.random() * (maxim - minim + 1)) + minim,
-    },
-  ];
-
+const G2 = (data) => {
 
   return (
     <div className="App">
       <h1>Grafic 2</h1>
+      
       <ComposedChart
           
           width={1500}
           height={400}
-          data={data}
+          data={data.data}
           margin={{
             top: 20,
             right: 20,
@@ -75,6 +39,13 @@ function G2() {
           <Bar dataKey="autobuze" barSize={20} fill="#413ea0" />
           <Line type="monotone" dataKey="Dintre_care_au_intarziat" stroke="#000000" />
         </ComposedChart>
+        <h1>NU mai urasc acest PieChart</h1>
+        <div className='pie_chart'>
+            <PieChart width={930} height={450}>
+              <Pie data={datepie} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={0} outerRadius={200} fill="#9B00FF" label={(entry) => entry.name}/> 
+            </PieChart>
+        </div>
+        
     </div>
   );
 }

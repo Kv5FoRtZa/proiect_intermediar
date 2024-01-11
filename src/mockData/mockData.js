@@ -38,30 +38,10 @@ export const dateTramvai41 = [
   },
 ];
 export const datepie = [
-  {
-    "name": "Group A",
-    "value": numar(),
-  },
-  {
-    "name": "Group B",
-    "value": numar(),
-  },
-  {
-    "name": "Group C",
-    "value": numar(),
-  },
-  {
-    "name": "Group D",
-    "value": numar(),
-  },
-  {
-    "name": "Group E",
-    "value": numar(),
-  },
-  {
-    "name": "Group F",
-    "value": numar(),
-  }
+  {name: "unu", value: numar(), fill: 'red'},
+  {name: "doi", value: numar(), fill: "green"},
+  {name: "trei", value: numar(), fill: "blue"},
+  {name: "pstru", value: numar(), fill: "purple"}
 ];
 const createData = (name, ora, timp, ceva, ivan) => {
   return { name, ora, timp, ceva, ivan };

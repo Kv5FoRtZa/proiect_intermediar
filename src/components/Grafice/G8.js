@@ -51,7 +51,6 @@ function G8() {
     },
   ];
 
-  console.log('lalal 1')
 
   return (
     <div className="App">

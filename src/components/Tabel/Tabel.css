@@ -1,0 +1,33 @@
+.button2
+{
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    padding-left: 4px;
+    min-width: 100px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(250, 235, 215, 0);
+    transition-duration: 0.2s;
+    cursor: pointer;
+    z-index: 10;
+    text-align: left;
+    
+}
+
+.button2:hover
+{
+    background-color:#00A4BD;
+    color: rgb(255, 255, 255);
+    z-index: 10;
+
+}
+.cezar
+{
+    background-color: rgba(182, 251, 251, 0.656);
+}
+.margini
+{
+    margin: 10px;
+    border: 1px black solid;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.69);
+
+}
