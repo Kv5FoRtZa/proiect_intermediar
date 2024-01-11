@@ -9,7 +9,6 @@ import {
   Legend,
   Pie,
   PieChart,
-  Cell,
 } from 'recharts';
 import "./lolol.css"
 import { datepie } from '../../mockData/mockData';
@@ -43,13 +42,12 @@ const Grafic = (data) => {
         <h1>NU mai urasc acest PieChart</h1>
         <div className='pie_chart'>
             <PieChart width={930} height={450}>
-              <Pie data={datepie} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={0} fill="#9B00FF" outerRadius={200}  label={(entry) => entry.name}> 
-              lol</Pie>
+              <Pie data={datepie} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={0} outerRadius={200} fill="#9B00FF" label={(entry) => entry.name}/> 
             </PieChart>
         </div>
         
     </div>
   );
-} 
+}
 
 export default Grafic;
