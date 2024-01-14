@@ -1,0 +1,42 @@
+
+.dropdown 
+{
+    display: inline-block;
+    position: relative;
+    align-self: left;
+    text-align: left;
+    z-index: 10;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    width: inherit;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: #000000;
+    text-align: left;
+    border-radius: 3px;
+    z-index: 10;
+}
+
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+
+.dropdown-content a 
+{
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    text-align: left;
+    z-index: 10;
+}
+
+.dropdown-content a:hover 
+{
+    color: #FFFFFF;
+    background-color: #00A4BD;
+    z-index: 10;
+}

@@ -1,0 +1,69 @@
+.meniu
+{
+    text-decoration: none;
+    text-align: left;
+    background-color: #333;
+    color: #FFFFFF;
+    font-size: 20px;
+    min-width: 100%;
+    z-index: 10;
+    top: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 2px;
+    position: fixed;
+}
+
+.buttonc
+{
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    background-color: #333;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    z-index: 10;
+    padding: 4px;
+    border-right: 1px solid rgb(102, 98, 98);
+    border-radius: 2px;
+}
+
+.buttonc:hover
+{
+    background-color:#00A4BD;
+    color: black;
+    z-index: 10;
+}
+
+.button2
+{
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    padding-left: 4px;
+    min-width: 100px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(250, 235, 215, 0);
+    transition-duration: 0.2s;
+    cursor: pointer;
+    z-index: 10;
+    text-align: left;
+    
+}
+
+.button2:hover
+{
+    background-color:#00A4BD;
+    color: rgb(255, 255, 255);
+    z-index: 10;
+
+}
+a:link 
+{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a:visited 
+{
+    text-decoration: inherit;
+    color: inherit;
+}

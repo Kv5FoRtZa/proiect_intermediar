@@ -1,0 +1,33 @@
+
+.text
+{
+    text-align: center;
+    font-size: 25px;
+    padding: 69px;
+}
+.noi {
+
+    margin-top: 50px;
+}
+.noi .poza
+{
+    margin-left: 10px;
+    padding-top: 150px;
+    width: 190px;
+    background-image: url(Screenshot\ 2023-11-24\ 092922.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition-duration: 1.2s;
+}
+.noi .poza:hover
+{
+    transform: rotate(360deg);
+}
+.titlu
+{
+    text-size-adjust: auto;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 3vw ;
+    margin-top: -100px;
+}
